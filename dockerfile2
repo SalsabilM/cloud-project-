@@ -1,0 +1,5 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD = Sa297#2007ma
+EXPOSE 3306
+COPY ./sql_code.sql /docker-entrypoint-initdb.d/
+# docker build -t db_file -f dockerfile2 .
